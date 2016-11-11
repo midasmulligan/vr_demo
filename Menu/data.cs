@@ -1,18 +1,18 @@
-﻿using UnityEngine;
+﻿#region Header
+using UnityEngine;
 using System.Collections;
+#endregion Header
 
+#region Methods
 public class data : MonoBehaviour {
 
-    public GameObject GvrCam;
-
-    public bool CamStateData = false;
-
-    private Vector3 newPosition;
+    public   GameObject   GvrCam;
+    public   bool         CamStateData = false;
+    private  Vector3      newPosition;
     
-    private Color panelBlack = new Color(0, 0, 0, 0.4f);
-    private Color panelWhite = new Color(1, 1, 1, 0.2f);
+    private  Color        panelBlack = new Color(0, 0, 0, 0.4f);
+    private  Color        panelWhite = new Color(1, 1, 1, 0.2f);
 
-    // Use this for initialization
     void Start()
     {
         GvrCam = GameObject.Find("GvrViewerMain");
@@ -56,3 +56,4 @@ public class data : MonoBehaviour {
     }
 
 }
+#endregion Methods

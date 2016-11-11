@@ -1,37 +1,45 @@
-﻿using UnityEngine;
+﻿#region Header
+using UnityEngine;
+#endregion Header
 
+// This script requires fixing.
+// N o n - F u n c t i o n i n g
+
+#region Methods
 public class WordSelector : MonoBehaviour
 {
-    public Color highlighted = Color.black;
-    public Color unhighlighted = Color.white;
-
+    public  Color      highlighted   = Color.black;
+    public  Color      unhighlighted = Color.white;
     private GameObject currentWord;
 
     // Update is called once per frame
     void Update()
     {
-        Transform camera = Camera.main.transform;
-        Ray ray = new Ray(camera.position, camera.rotation * Vector3.forward);
+        Transform  camera  = Camera.main.transform;
+        Ray        ray     = new Ray(camera.position, camera.rotation * Vector3.forward);
         RaycastHit hit;
         GameObject hitWord = null;
 
         if (Physics.Raycast(ray, out hit) && (hit.transform.gameObject.tag == "Word"))
         {
             hitWord = hit.transform.gameObject;
+
             if (currentWord != hitWord)
             {
                 if (currentWord != null)
                 {
                     // Unhighlight
-                    TextMesh phraseText = currentWord.transform.GetComponent<TextMesh>();
-                    phraseText.color = unhighlighted;
+                    TextMesh phraseText       = currentWord.transform.GetComponent<TextMesh>();
+                             phraseText.color = unhighlighted;
                 }
+
                 currentWord = hitWord;
+
                 if (currentWord != null)
                 {
                     // Highlight
-                    TextMesh phraseText = hit.transform.GetComponent<TextMesh>();
-                    phraseText.color = highlighted;
+                    TextMesh phraseText       = hit.transform.GetComponent<TextMesh>();
+                             phraseText.color = highlighted;
                 }
             }
         }
@@ -40,10 +48,11 @@ public class WordSelector : MonoBehaviour
             if (currentWord != null)
             {
                 // Unhighlight
-                TextMesh phraseText = currentWord.transform.GetComponent<TextMesh>();
-                phraseText.color = unhighlighted;
-                currentWord = null;
+                TextMesh phraseText       = currentWord.transform.GetComponent<TextMesh>();
+                         phraseText.color = unhighlighted;
+                         currentWord      = null;
             }
         }
     }
 }
+#endregion Methods
