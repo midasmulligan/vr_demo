@@ -11,7 +11,7 @@ public class Phrase
     public float  frequency;
 }
 
-public class FormWordCloud : MonoBehaviour
+public class StaticWordCloud : MonoBehaviour
 {
     public GameObject childObject;
     public float size = 10.0f;
@@ -51,7 +51,7 @@ public class FormWordCloud : MonoBehaviour
             float radius = Mathf.Sqrt(1 - y * y);
             float angle = i * increment;
 
-            Vector3 pos = new Vector3((Mathf.Cos(angle) * radius * size), y * size, Mathf.Sin(angle) * radius * size);
+            Vector3 pos = new Vector3(-20f, 2f, -10f);
 
             GameObject child = Instantiate(childObject, pos, Quaternion.identity) as GameObject;
             child.transform.parent = transform;
