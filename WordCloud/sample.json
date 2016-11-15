@@ -1,20 +1,84 @@
-[{"term":"the", "occurrences":504},
-{"term":"to","occurrences":447},
-{"term":"rt","occurrences":433},
-{"term":"a","occurrences":382},
-{"term":"in","occurrences":299},
-{"term":"of","occurrences":274},
-{"term":"adventure","occurrences":236},
-{"term":"and","occurrences":216},
-{"term":"for","occurrences":166},
-{"term":"is","occurrences":157},
-{"term":"on","occurrences":154},
-{"term":"cars","occurrences":136},
-{"term":"it","occurrences":122},
-{"term":"you","occurrences":116},
-{"term":"with","occurrences":100},
-{"term":"from","occurrences":87},
-{"term":"at","occurrences":85},
-{"term":"i","occurrences":85},
-{"term":"this","occurrences":85},
-{"term":"that","occurrences":83}]
+[
+    {
+        'term': 'brexit',
+        'frequency': 46006
+    },
+    {
+        'term': '\u2026',
+        'frequency': 25034
+    },
+    {
+        'term': '#brexit',
+        'frequency': 13806
+    },
+    {
+        'term': 'election',
+        'frequency': 9414
+    },
+    {
+        'term': 'theresa',
+        'frequency': 7983
+    },
+    {
+        'term': 'uk',
+        'frequency': 6708
+    },
+    {
+        'term': '...',
+        'frequency': 5890
+    },
+    {
+        'term': 'plan',
+        'frequency': 5747
+    },
+    {
+        'term': 'people',
+        'frequency': 4381
+    },
+    {
+        'term': 'eu',
+        'frequency': 4263
+    },
+    {
+        'term': '#pmqs',
+        'frequency': 4071
+    },
+    {
+        'term': 'vote',
+        'frequency': 3788
+    },
+    {
+        'term': 'trump',
+        'frequency': 3654
+    },
+    {
+        'term': 'corbyn',
+        'frequency': 3436
+    },
+    {
+        'term': 'https',
+        'frequency': 2956
+    },
+    {
+        'term': 'means',
+        'frequency': 2920
+    },
+    {
+        'term': 'leave',
+        'frequency': 2667
+    },
+    {
+
+        'term': 'tories',
+        'frequency': 2551
+    },
+    {
+
+        'term': 'britain',
+        'frequency': 2493
+    },
+    {
+        
+        'term': 'trade',
+        'frequency': 2407
+    }]
